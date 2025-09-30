@@ -8,7 +8,7 @@
 
 
  document.write("<h2>Q1: Output of Pre/Post Increment</h2>");
-        var a = 10;
+        let a = 10;
         document.write("The value of a is: " + a + "<br>");
         document.write("The value of ++a is: " + (++a) + "<br>");
         document.write("Now the value of a is: " + a + "<br><br>");
@@ -24,7 +24,7 @@
 // execution of the following script:
 
 document.write("<h2>Q2: Complex Expression</h2>");
-        var a = 2, b = 1;
+        let a = 2, b = 1;
         document.write("a = " + a + ", b = " + b + "<br>");
         var result = --a - --b + ++b + b--;
         document.write("Result of expression (--a - --b + ++b + b--) = " + result + "<br>");
@@ -36,7 +36,7 @@ document.write("<h2>Q2: Complex Expression</h2>");
 // greet the user.
 
 document.write("<h2>Q3: Greeting User</h2>");
-        var userName = prompt("Enter your name:");
+        let userName = prompt("Enter your name:");
         document.write("Hello " + userName + "! Welcome to JavaScript.<br><hr>");
 
 
@@ -46,7 +46,7 @@ document.write("<h2>Q3: Greeting User</h2>");
 // should be displayed by default.
 
         document.write("<h2>Q4: Multiplication Table</h2>");
-        var num = +prompt("Enter a number for table (default is 5):", 5);
+        let num = +prompt("Enter a number for table (default is 5):", 5);
         document.write("Multiplication Table of " + num + "<br>");
         for (var i = 1; i <= 10; i++) {
             document.write(num + " x " + i + " = " + (num * i) + "<br>");
@@ -66,18 +66,18 @@ document.write("<h2>Q3: Greeting User</h2>");
 // result in browser like this.(Hint: user table)
 
     document.write("<h2>Q5: Marks Sheet</h2>");
-        var sub1 = prompt("Enter first subject name:");
-        var sub2 = prompt("Enter second subject name:");
-        var sub3 = prompt("Enter third subject name:");
-        var totalMarksEach = 100;
+        let sub1 = prompt("Enter first subject name:");
+        let sub2 = prompt("Enter second subject name:");
+        let sub3 = prompt("Enter third subject name:");
+        let totalMarksEach = 100;
 
-        var marks1 = +prompt("Enter obtained marks for " + sub1 + ":");
-        var marks2 = +prompt("Enter obtained marks for " + sub2 + ":");
-        var marks3 = +prompt("Enter obtained marks for " + sub3 + ":");
+        let marks1 = +prompt("Enter obtained marks for " + sub1 + ":");
+        let marks2 = +prompt("Enter obtained marks for " + sub2 + ":");
+        let marks3 = +prompt("Enter obtained marks for " + sub3 + ":");
 
-        var totalMarks = totalMarksEach * 3;
-        var obtainedMarks = marks1 + marks2 + marks3;
-        var percentage = (obtainedMarks / totalMarks * 100).toFixed(2);
+        let totalMarks = totalMarksEach * 3;
+        let obtainedMarks = marks1 + marks2 + marks3;
+        let percentage = (obtainedMarks / totalMarks * 100).toFixed(2);
 
         document.write("<table border='1' cellspacing='0' cellpadding='8'>");
         document.write("<tr><th>Subject</th><th>Total Marks</th><th>Obtained Marks</th></tr>");
@@ -86,4 +86,5 @@ document.write("<h2>Q3: Greeting User</h2>");
         document.write("<tr><td>" + sub3 + "</td><td>" + totalMarksEach + "</td><td>" + marks3 + "</td></tr>");
         document.write("<tr><th>Total</th><th>" + totalMarks + "</th><th>" + obtainedMarks + "</th></tr>");
         document.write("</table>");
+
         document.write("<h3>Percentage: " + percentage + "%</h3><hr>")
